@@ -119,7 +119,7 @@ jobs:
         uses: docker/build-push-action@v2
         with:
           context: .
-          file: ./supplemental/docker/prod/Dockerfile
+          file: ./docker/Dockerfile
           build-args: |
             BUILD_DATE=${{ env.BUILD_DATE }}
             BUILD_REVISION=${{ github.sha }}
